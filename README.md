@@ -111,6 +111,32 @@ public class Man extends People{
   - Blocks
   - Nested class and interface
 
+```java
+public class ExampleClass {
+        String username;
+        int age;
+    public static void main(String[] args) {
+        ExampleClass people = new ExampleClass();
+        people.setUsernameAndAge("User2", 20);
+        System.out.println(people.username + ":" + people.age);
+
+        people.username = "User1";
+        people.age = 18 ;
+        disPlayUsingReference(people.username, people.age);
+
+    }
+    void setUsernameAndAge(String username, int age){
+        this.username = username;
+        this.age = age;
+    }
+
+    static void disPlayUsingReference(String name, int age){
+        System.out.println(name + ":" + age);
+    }
+
+}
+```
+
 #### Note: `new` keyword is used to allocate memory in runtime (Heap memory area)
 
 - Instance Variable: a variable is created inside class but outside method. It does not get memory in compile time, but get memory in run time when a object or instance is created 
@@ -119,9 +145,82 @@ public class Man extends People{
 
 - 3 way to initialize object
 
-  - Initialization through reference
-  - Initialization through method
-  - Initialization through constructor
+
+`Initialization through reference`
+
+```java
+public class ExampleReference {
+  private int x;
+  private int y;
+
+  private void displayValue(){
+    System.out.println(this.x +  ":" + this.y);
+
+  }
+
+  public static void main(String[] args) {
+    ExampleReference obj = new ExampleReference();
+    obj.x = 5;
+    obj.y = 10;
+    obj.displayValue();
+  }
+}
+
+```
+
+`Initialization through method`
+
+```java
+public class ExampleMethod {
+  String name;
+  int age;
+
+  void setProfile(String name, int age){
+    this.name = name;
+    this.age = age;
+  }
+
+  void displayProfile(){
+    System.out.println(this.name + " : " + this.age);
+  }
+
+
+
+
+  public static void main(String[] args) {
+    ExampleMethod obj1 = new ExampleMethod();
+    obj1.setProfile("User1", 19);
+    obj1.displayProfile();
+    ExampleMethod obj2 = new ExampleMethod();
+    obj2.setProfile("User2", 9);
+    obj2.displayProfile();
+  }
+}
+
+```
+`Initialization through constructor`
+```java
+public class ExampleConstructor {
+    int x;
+
+    public static void main(String[] args) {
+        ExampleConstructor obj = new ExampleConstructor(6);
+        obj.displayNumber();
+
+    }
+
+    public void displayNumber(){
+        System.out.println("This number is: " + this.x);
+    }
+
+    public ExampleConstructor(int x){
+        this.x = x;
+    }
+}
+
+```
+
+
   
 ### 3. Interface and relationship between class and interface
 
