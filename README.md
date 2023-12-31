@@ -3,10 +3,10 @@
 - Data structure chi ra cách tổ chức data trong memory
 - Có 2 loại data structure
 
-    - Primitive data structure: VD: int, char, float, double, ..., Primitive data structure có thể giữ single value. 
+    - Primitive data structure: VD: int, char, float, double, ..., Primitive data structure có thể giữ single value.
     - Non-primitive data structure: Được chia thành 2 loại:
 
-        - Linear data structure: Data được sắp xếp một cách tuần tự. VD: Array, LinkList, Queues, Stacks.(Note: một phần tử chỉ kết nối với một phẩn tử trong cùng một kiểu dữ liệu) 
+        - Linear data structure: Data được sắp xếp một cách tuần tự. VD: Array, LinkList, Queues, Stacks.(Note: một phần tử chỉ kết nối với một phẩn tử trong cùng một kiểu dữ liệu)
         - Non-linear data structure: Một phần tử có thể connect với n phẩn tử (elements). VD: trees, graphs (Note: Các phẩn tử được sắp xếp một cách ngẫu nhiên)
 
 #### Note: Compile time vs run time?
@@ -20,10 +20,13 @@
     - Static data structure: là cấu trúc dữ liệu mà size của nó được cấp tại compile time. Mà maximum size được cố định
     - Dynamic data structure: Là cấu trúc dữ liệu mà size được cấp tại run time. Vì vậy maximum size của nó là flexible.
 
-    
+
 ## II. Một số kiểu data structure phổ biến
 
 ### 1. Array
+
+
+
 
 ### 2. Linked List
 
@@ -41,7 +44,7 @@
 
 - Collection of statement to perform a certain task
 - Advance: reusability, easy modification and readability
-- Declare: 
+- Declare:
 
 ```java
 public int sum (int a, int b){
@@ -53,7 +56,7 @@ public int sum (int a, int b){
 #### Note: Public vs Private vs Protect
 
 - Public is accessible by all classes in application
-- Private is accessible by self class where it is defined 
+- Private is accessible by self class where it is defined
 - Protect is accessible within the same package or subclass in a different package
 
 
@@ -80,7 +83,7 @@ public class InstanceMethodExample {
         - Accessor method: using to read variables: such as getId, getUsers,...It returns the values of private field 
         - Mutator method: using to read and modify variables the value: such as setUsername, setRolls,... It does not return anything
 
-- Abstract Method: no has method body and always declare abstract class 
+- Abstract Method: no has method body and always declare abstract class
 
 ```java
 abstract class  People{
@@ -103,13 +106,13 @@ public class Man extends People{
 
 ### 2. Class
 
-- A class contains: 
+- A class contains:
 
-  - Fields
-  - Methods
-  - Constructors
-  - Blocks
-  - Nested class and interface
+    - Fields
+    - Methods
+    - Constructors
+    - Blocks
+    - Nested class and interface
 
 ```java
 public class ExampleClass {
@@ -139,7 +142,7 @@ public class ExampleClass {
 
 #### Note: `new` keyword is used to allocate memory in runtime (Heap memory area)
 
-- Instance Variable: a variable is created inside class but outside method. It does not get memory in compile time, but get memory in run time when a object or instance is created 
+- Instance Variable: a variable is created inside class but outside method. It does not get memory in compile time, but get memory in run time when a object or instance is created
 
 - Method: likely function
 
@@ -221,8 +224,12 @@ public class ExampleConstructor {
 ```
 
 
-  
+
 ### 3. Interface and relationship between class and interface
+
+
+
+
 
 
 
