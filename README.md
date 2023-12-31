@@ -21,11 +21,35 @@
     - Dynamic data structure: Là cấu trúc dữ liệu mà size được cấp tại run time. Vì vậy maximum size của nó là flexible.
 
 
+
+#### Note: Một số quy tắc đặt tên biến, hàm, class, package, ... trong java
+
+- Tên packages: examplepackages,org.example.class ,... 
+- Tên Class: Customer, MyCustomer,...
+- Tên Interface: INumerate
+- Tên Method: getInformation
+- Tên biến: orderNumber
+- Tên hằng số: DEFAULT_WIDTH, MAX_HEIGHT
+
 ## II. Một số kiểu data structure phổ biến
 
 ### 1. Array
 
+- All array are dynamically allocated
+- Array may store in contiguous memory 
+- Array are objects in java, you can find length in object property
+- A Java array variable can also be declared like other variables with [] after the data type.
+- Variables in the array are ordered, and each has an index beginning with 0.
+- Java array can also be used as a static field, a local variable, or a method parameter.
 
+#### Note: Creating, Initializing and Accessing an Arrays
+
+- Time Complexity: O(n)
+- Auxiliary Space: O(1)
+
+```java
+
+```
 
 
 ### 2. Linked List
@@ -224,19 +248,61 @@ public class ExampleConstructor {
 ```
 
 
+### 3. Package in Java, Module in java
 
-### 3. Interface and relationship between class and interface
+- Package in Java is a mechanism to encapsulate a group of classes, sub packages and interfaces.
+- Packages are used for:
+
+  - Preventing name config. For example: For example: there can be 2 classes with name Employee in 2 packages such as college.staff.ecs.Employee and college.staff.ec.Employee
+  - Making searching and usage of classes, interface, enumerations,...
+  - Providing controller access: protected and default have package level access control. A protect member is accessible by classes in same packages and its subclasses. A default member is accessible by classes in the same packages only.
+  - Packages can be considered as data encapsulation
+
+
+- A package is a container of group of related class.
+- Subpackages: Packages that is are inside another package (protected and default access)
+- There are 2 type of packages: 
+
+  - Built-in packages
+
+    - java.lang: Contain language support classes (primitive data, types math operations). This package is automatically imported.
+    - java.io: Contain classes support input and output operation
+    - java.util: Contain classes which implement data structures as linked list, queue,...
+    - java.applet: Contain classes for creating Applets
+    - java.awt: Contain classes for implementing the components for graphical user interfaces (like button , ;menus etc).
+    - java.net: Contain classes for supporting network operations
+  - User-defined packages
+
+- Using static imported: 
+- Handling name configs: 
+- Directory structure
+
+```java
+package examplePackage;
+import java.util.*;
+public class ExampleLinkList {
+    public static void main(String[] args) {
+        Collection<String> list = new LinkedList<String>();
+        list.add("One");
+        list.add("Two");
+        list.add("Three");
+        System.out.println(list);
+        list.add("End");
+        System.out.println(list);
+    }
+
+}
+```
+#### Link tham khảo: https://docs.oracle.com/javase/tutorial/java/package/usepkgs.html
+
+### 4. Interface and relationship between class and interface
 
 
 
+### 5. OOP concepts
 
 
-
-
-### 4. OOP concepts
-
-
-### 5. Exception handling
+### 6. Exception handling
 
 ## IV. Files and API in Java
 
