@@ -20,6 +20,5 @@ public class ExampleArray {
             sum += arr1[i];
             System.out.println(sum);
         }
-
     }
 }
