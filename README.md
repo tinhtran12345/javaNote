@@ -333,11 +333,96 @@ public class ExampleLinkList {
 
 + Object-oriented program (OOP):
 
-  #### a. Abstraction
+#### a. Abstraction
 
-+
++   Abstraction is achieved by interface and abstract classes => can achieved 100% abstraction using interface.  
 
-### 5. Interface and relationship between class and interface
+=> Abstract method contains only method declaration but not implementation.
+
+
+#### b. Encapsulation.
+
++ Prevent the data from being accessing by code outside this shield.
+
++ Encapsulation can be achieved by declaring all the variables in a class as private and writing public methods in the class to set and get the values of the variables.
+
+#### c. Inheritance
+
++ Allow to inherit the features (fields and methods) of another class. We are achieving inheritance by using extends keyword.
++  Inheritance is also known as “is-a” relationship.
+
++ SuperClass or parentClass: The clas whose features are inherited.
++ SubClass: The class that inherit other class.
++ Reusability: Inheritance supports the concept of “reusability”
+
+``` java
+class A{
+    void method1(){}
+
+    void method2(){}
+
+}
+public class InheritanceExample extends  A {
+    void method3(){}
+    void method4(){}
+}
+
+```
+
+#### d. Polymorphism
+
+=> There is mainly of 2 types:
+
++ Overloading
+
++ Overriding
+
+
+```java
+
+public class PolymorphismExample {
+    public int sum(int x, int y){
+        return x+y;
+    }
+
+    public int sum (int x, int y, int z){
+        return  x+y+z;
+    }
+
+    public double sum (double x, double y){
+        return  x+y;
+    }
+
+    public static void main(String[] args) {
+        PolymorphismExample s = new PolymorphismExample();
+        System.out.println(s.sum(10, 20));
+        System.out.println(s.sum(10, 20, 30));
+        System.out.println(s.sum(1.3, 2.4));
+    }
+}
+
+```
+
+
+### Java class
+
++ Class is just a template or blueprint from which objects are created.
+
++ Class does not occupy memory
+
++ Class is a group of variables of different data types and group of methods.
+
++ A class in java can contain:
+
+    + Data member
+    + Method
+    + Constructor
+    + Nested Class
+    + Interface
+
+
+
+### 5. Memory Management
 
 ### 6. Exception handling
 
